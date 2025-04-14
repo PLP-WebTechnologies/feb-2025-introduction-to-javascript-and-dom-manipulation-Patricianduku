@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(193, 203, 200);
+        }
+        .container {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript DOM </h1>
+    </header>
+
+    <main>
+        <!-- 1. Change Text Content -->
+        <div class="container">
+            <h2>1. Change Text Content</h2>
+            <p id="text-to-change">Javascript DOM Manipulation tactics.</p>
+            <button id="text-button">Change Text</button>
+        </div>
+
+        <!-- 2. Change CSS Styles -->
+        <div class="container">
+            <h2>2. Change CSS Styles</h2>
+            <p id="style-paragraph">Welcome to  my website.</p>
+            <button id="style-button">Change Style</button>
+        </div>
+
+        <!-- 3. Add/Remove Elements -->
+        <div class="container">
+            <h2>3. Add/Remove Elements</h2>
+            <input type="text" id="item-input" placeholder="Enter item text">
+            <button id="add-button">Add Item</button>
+            <button id="remove-button">Remove Item</button>
+            <ul id="item-list">
+                <li>One</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>A DOM manipulation illustration.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
